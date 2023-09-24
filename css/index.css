@@ -1,0 +1,256 @@
+
+
+
+
+
+/* Content */
+
+.content{
+    background: url(../images/main.webp) no-repeat bottom center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content-typo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-typo-p{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    animation: typoUp 0.7s forwards;
+    opacity: 0;
+    width: 13.726%;
+}
+/* .content-typo-p>img{width: 90%;} */
+
+.cher-e{
+    left: 14%;
+    animation: typoUp 0.7s 0.2s forwards;
+    width: 8.820%;
+}
+.cher-t{
+    left: 22%;
+    animation: typoUp 0.7s 0.4s forwards;
+    width: 7.150%;
+}
+.cher-t2{
+    left: 28%;
+    animation: typoUp 0.7s 0.6s forwards;
+    width: 7.150%;
+}
+.cher-e2{
+    left: 34%;
+    animation: typoUp 0.7s 0.8s forwards;
+    width: 8.298%;
+}
+.cher-r{
+    left: 40%;
+    animation: typoUp 0.7s 1s forwards;
+    width: 8.141%;
+}
+.cher-f{
+    left: 53%;
+    animation: typoUp 0.7s 1.2s forwards;
+    width: 8.768%;
+}
+.cher-o{
+    left: 62%;
+    animation: typoUp 0.7s 1.4s forwards;
+    width: 9.551%;
+}
+.cher-o2{
+    left: 72%;
+    animation: typoUp 0.7s 1.6s forwards;
+    width: 9.551%;
+}
+.cher-d{
+    left: 82%;
+    animation: typoUp 0.7s 1.8s forwards;
+    width: 9.655%;
+}
+.cher-s{
+    left: 92%;
+    animation: typoUp 0.7s 2s forwards;
+    width: 7.776%;
+}
+
+.slog{
+    position: absolute;
+    right: 6%;
+    opacity: 0;
+    bottom: -10%;
+    font-size: 2.6rem;
+    color: var(--font-color);
+    animation: slogUp 0.7s 2.5s forwards;
+    
+}
+
+@keyframes typoUp{
+    to{
+        opacity: 1;
+        bottom: -3%;
+    }
+}
+
+@keyframes slogUp{
+   to{
+    opacity: 1;
+    bottom: 20%;
+   }
+}
+
+/* 애니메이션 부자연스러운건 to로 하면 부드럽게 적용 */
+
+
+
+/* 반응형 */
+@media screen and (max-width:1260px){
+    
+    .cher-e,.cher-e2,.cher-t,.cher-t2,.cher-r,.cher-b{
+        top: 60%;
+    }
+    .cher-f,.cher-o,.cher-o2,.cher-d,.cher-s{
+        bottom: -10%;
+        opacity: 0;
+    }
+    .cher-b{width: 15.726%;}
+    .cher-e{width: 10.820%; left: 16%; margin-top: 6rem;}
+    .cher-t{width: 9.150%; left: 26%;}
+    .cher-t2{width: 9.150%; left: 33%;}
+    .cher-e2{width:10.298%;left: 40%; margin-top: 6rem;}
+    .cher-r{width:10.141%; left: 48%; margin-top: 6rem;}
+    .cher-f{
+        width: 10.768%;
+        animation: typoUp2 0.7s 1.2s forwards;
+        left: 41%;
+    }
+    .cher-o{
+        width: 11.551%;
+        animation: typoUp2 0.7s 1.4s forwards;
+        left: 52%;
+    }
+    .cher-o2{
+        width: 11.551%;
+        animation: typoUp2 0.7s 1.6s forwards;
+        left: 64%;
+    }
+    .cher-d{
+        width: 11.655%;
+        animation: typoUp2 0.7s 1.8s forwards;
+        left: 76%;
+    }
+    .cher-s{
+        width: 9.776%;
+        animation: typoUp2 0.7s 2s forwards;
+        left: 89%;
+    }
+    @keyframes typoUp2{
+        to{
+            bottom: 0%;
+            opacity: 1;
+        }
+    }
+    @keyframes typoUp{
+        to{
+            opacity: 1;
+            top: 50%;
+        }
+    }
+    
+    .slog{
+        font-size: 2rem;
+        left: 1%;
+        top: 50%;
+    }
+    @keyframes slogUp{
+        to{
+         opacity: 1;
+         top: 41%;
+        }
+     }
+     
+}
+
+
+@media screen and (max-width:1024px){
+   
+    .cher-e,.cher-e2,.cher-r{margin-top: 4rem;}
+    @keyframes typoUp2{
+        to{
+            bottom: 0%;
+            opacity: 1;
+        }
+    }
+    @keyframes typoUp{
+        to{
+            opacity: 1;
+            top: 60%;
+        }
+    }
+    @keyframes slogUp{
+        to{
+         opacity: 1;
+         top: 50%;
+        }
+     }
+
+    
+}
+
+@media screen and (max-width:767px){
+    .cher-b{width: 28.1%;}
+    .cher-e{width: 18.1%; left: 28%; }
+    .cher-t{width: 14.65%; left: 44%;}
+    .cher-t2{width:14.65%; left: 56%;}
+    .cher-e2{width:17.3%;left: 67%; }
+    .cher-r{width:17.9%; left: 80%; }
+    .cher-f{
+        width: 18.3%;
+        animation: typoUp2 0.7s 1.2s forwards;
+        left: 2%;
+    }
+    .cher-o{
+        width: 19.9%;
+        animation: typoUp2 0.7s 1.4s forwards;
+        left: 19%;
+    }
+    .cher-o2{
+        width: 19.9%;
+        animation: typoUp2 0.7s 1.6s forwards;
+        left: 40%;
+    }
+    .cher-d{
+        width: 20.2%;
+        animation: typoUp2 0.7s 1.8s forwards;
+        left: 61%;
+    }
+    .cher-s{
+        width: 17.5%;
+        animation: typoUp2 0.7s 2s forwards;
+        left: 82%;
+    }
+
+    @keyframes typoUp2{
+        to{
+            bottom: 0%;
+            opacity: 1;
+        }
+    }
+    @keyframes typoUp{
+        to{
+            opacity: 1;
+            top:50%;
+        }
+    }
+    @keyframes slogUp{
+        to{
+         opacity: 1;
+         top: 40%;
+        }
+     }
+}
